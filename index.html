@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="sketch">
+<head>
+	<meta charset="UTF-8">
+	<title>几何画板</title>
+	<link rel="shortcut icon" type="image/x-icon" href="image/CD_Title_128px_1144899_easyicon.net.ico" />
+	<link rel="stylesheet" href="css/index.css">
+
+
+</head>
+<body ng-controller="sketchController">
+  <div class="list">
+  <div class="logo">
+  <img src="image/1.png"  alt="">
+  	<img src="image/welcome.gif" alt="">
+   
+  </div>
+  <div class="tools">
+  	  <img class="img" ng-repeat="(key, value) in tools" ng-click="setTool(value)" src="{{key}}" alt="">
+  </div>
+
+  <div class="fill">
+  	<span ng-click="setStyle('fill')"><img src="image/tianchong.png" alt="">填充</span>
+  	<input ng-model="cssState.fillstyle" type="color"style="margin-left:30px;">
+  </div>
+   <div class="stroke">
+  	<span ng-click="setStyle('stroke')" ><img src="image/line.png" alt="">画线</span>
+  	<input  ng-model="cssState.strokestyle" type="color" style="margin-left:30px;">
+  </div>
+  <div class="lineWidth" >
+    <span class="line_width">设置线宽</span>
+  	 <input class="line" ng-model="cssState.lineWidth" type="range"  max="30" min="1" step="1">
+  </div>
+ 
+  	
+  <div class="setting">设置画布大小</div>
+  </div>
+  <div class="new" ng-click="newSketch()"> 新建</div>
+  <a class="save" ng-click="save($event)">保存</a>
+  <div class="back"> 回退</div>
+
+  
+  <input class="one_po" ng-model="canvasWH.width" type="range" max="800" min="400" step="1">
+  纵向:<input class="two_po" type="range" ng-model="canvasWH.height" max="800" min="400" step="1">
+  <div class="huabu">
+
+  	<canvas id="canvas" height="{{canvasWH.height}}" width="{{canvasWH.width}}"></canvas>
+  </div>
+	
+</body>
+   <script src="js/angular.js"></script>
+	<script src="js/index.js"></script>
+	
+</html>

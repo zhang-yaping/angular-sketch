@@ -1,0 +1,166 @@
+body{
+	margin:0;padding: 0;
+	font-weight: bold;
+	background: #18668d;
+}
+
+ul,li{
+	
+	list-style: none
+}
+.logo{
+	height: 66px;
+}
+.logo img:nth-child(1){
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+    margin:13px 20px 0px; 
+}
+#canvas{
+	position: absolute;
+	left: 435px;
+	top: 30px;
+	border: 1px solid black;
+	background: #ffffff;
+}
+.list{
+	height: 100%;
+	width: 240px;
+	background: #999;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.list ul{
+	color: white
+}
+.active{
+   color: red;
+	font-size:25px;
+}
+.fill{
+	position: absolute;
+	top:370px;
+	left: 60px;
+	border-bottom: 2px solid white;
+}
+.fill span{
+	color:black
+}
+.stroke{
+	position: absolute;
+	top:320px;
+	left: 60px;
+	width: 260px;
+}
+.lineWidth{
+	border-bottom: 2px solid white;
+	margin-bottom: 20px;
+}
+.stroke span{
+	color:black;
+}
+
+.img{
+	display: block;
+	width:30px;
+	height:30px;
+	margin-top: 10px;
+	border:1px solid black;
+}
+.fill img{
+	width: 30px;
+	height: 30px;
+}
+.stroke img{
+	width: 30px;
+	height: 30px;
+}
+.tools{
+	position:absolute;
+	right:30px;
+	top:80px;
+}
+.setting{
+	background-image: url(../image/t01d35948019d3f8f4e.jpg);
+	border-radius: 5px;
+	text-align: center;
+	line-height: 30px;
+	width:130px;
+	height: 30px;
+	border: 1px solid black;
+	position: absolute;
+	bottom: 100px;
+	left: 20px;
+}
+.line_width{
+	
+	color: black;
+	background-image: url(../image/t01d35948019d3f8f4e.jpg);
+	border-radius: 5px;
+	text-align: center;
+	line-height: 30px;
+	width:100px;
+	height: 30px;
+	border: 1px solid black;
+	position: absolute;
+	bottom:200px;
+	left: 20px;
+
+}
+.line{
+	position: absolute;
+	bottom: 160px;
+	left: 20px;
+}
+.one_po{
+	position: absolute;
+bottom:60px;
+left: 20px;
+}
+.two_po{
+	position: absolute;
+bottom:30px;
+left: 20px;
+}
+.new{
+	color: black;
+	background-image: url(../image/t01d35948019d3f8f4e.jpg);
+	border-radius: 5px;
+	text-align: center;
+	line-height: 30px;
+	width:100px;
+	height: 30px;
+	border: 1px solid black;
+	position: absolute;
+	top:90px;
+	left: 20px;
+}
+.save{
+	display: block;
+	color: black;
+	background-image: url(../image/t01d35948019d3f8f4e.jpg);
+	border-radius: 5px;
+	text-align: center;
+	line-height: 30px;
+	width:100px;
+	height: 30px;
+	border: 1px solid black;
+	position: absolute;
+	top:180px;
+	left: 20px;
+}
+.back{
+	color: black;
+	background-image: url(../image/t01d35948019d3f8f4e.jpg);
+	border-radius: 5px;
+	text-align: center;
+	line-height: 30px;
+	width:100px;
+	height: 30px;
+	border: 1px solid black;
+	position: absolute;
+	top:260px;
+	left: 20px;
+}
